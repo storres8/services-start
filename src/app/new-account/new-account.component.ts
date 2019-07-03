@@ -5,8 +5,8 @@ import { AccountsService } from "../accounts.service";
 @Component({
   selector: "app-new-account",
   templateUrl: "./new-account.component.html",
-  styleUrls: ["./new-account.component.css"],
-  providers: [LoggingService]
+  styleUrls: ["./new-account.component.css"]
+  // providers: [LoggingService]
 })
 export class NewAccountComponent {
   // This line of code in the constructor is what injects an instance of our logging service component
@@ -23,6 +23,6 @@ export class NewAccountComponent {
     //   status: accountStatus
     // });
     this.accountsService.addAccount(accountName, accountStatus);
-    this.loggingService.logStatusChange(accountStatus);
+    // this.loggingService.logStatusChange(accountStatus);
   }
 }
